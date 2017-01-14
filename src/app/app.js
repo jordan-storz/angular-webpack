@@ -1,6 +1,5 @@
 import angular from 'angular';
 
-import '../style/app.css';
 
 let app = () => {
   return {
@@ -22,4 +21,4 @@ angular.module(MODULE_NAME, [])
   .directive('app', app)
   .controller('AppCtrl', AppCtrl);
 
-export default MODULE_NAME;
+export default angular.module(MODULE_NAME);
